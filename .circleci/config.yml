@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  code_analyze:
+    docker:
+      - image: circleci/openjdk:8
+    steps:
+      - checkout
+      - run:
+          name: analyze by SonarQube
+          command: bash ./.circleci/analyze-sonarqube.sh
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - code_analyze
