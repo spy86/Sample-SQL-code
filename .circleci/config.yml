@@ -4,12 +4,10 @@ jobs:
     docker:
       - image: circleci/openjdk:8
     steps:
-      - download
       - run:
           name: Download SonarQube
           command: curl --insecure -OL https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.6.1.zip
     steps:
-      - extract
       - run:
           name: Extract SonarQube
           command: unzip sonar-scanner-2.6.1.zip
