@@ -5,9 +5,6 @@ CREATE TABLE history_backup AS
  INSERT INTO history SELECT * FROM history_backup;
  UNLOCK TABLES;
  DROP TABLE history_backup;
- 
-'###########################################################'
-
 CREATE TABLE history_log_backup AS
       SELECT * FROM history_log WHERE clock > 1388534400;
  TRUNCATE history_log;
@@ -15,8 +12,6 @@ CREATE TABLE history_log_backup AS
  INSERT INTO history_log SELECT * FROM history_log_backup;
  UNLOCK TABLES;
  DROP TABLE history_log_backup;
- 
- '###########################################################'
  CREATE TABLE history_str_backup AS
       SELECT * FROM history_str WHERE clock > 1388534400;
  TRUNCATE history_str;						  
@@ -24,9 +19,6 @@ CREATE TABLE history_log_backup AS
  INSERT INTO history_str SELECT * FROM history_str_backup;
  UNLOCK TABLES;
  DROP TABLE history_str_backup;
- 
-'###########################################################'
-
 CREATE TABLE history_str_sync_backup AS
       SELECT * FROM history_str_sync WHERE clock > 1388534400;
  TRUNCATE history_str_sync;
@@ -34,8 +26,6 @@ CREATE TABLE history_str_sync_backup AS
  INSERT INTO history_str_sync SELECT * FROM history_str_sync_backup;
  UNLOCK TABLES;
  DROP TABLE history_str_sync_backup;
- 
- '#########################################################'
  CREATE TABLE history_sync_backup AS
       SELECT * FROM history_sync WHERE clock > 1388534400;
  TRUNCATE history_sync;
@@ -43,9 +33,6 @@ CREATE TABLE history_str_sync_backup AS
  INSERT INTO history_sync SELECT * FROM history_sync_backup;
  UNLOCK TABLES;
  DROP TABLE history_sync_backup;
- 
-'###########################################################'
-
 CREATE TABLE history_uint_backup AS
       SELECT * FROM history_uint WHERE clock > 1388534400;
  TRUNCATE history_uint;
@@ -53,8 +40,6 @@ CREATE TABLE history_uint_backup AS
  INSERT INTO history_uint SELECT * FROM history_uint_backup;
  UNLOCK TABLES;
  DROP TABLE history_uint_backup;
- 
- '##########################################################'
  CREATE TABLE history_text_backup AS
       SELECT * FROM history_text WHERE clock > 1388534400;
  TRUNCATE history_text;
@@ -62,9 +47,6 @@ CREATE TABLE history_uint_backup AS
  INSERT INTO history_text SELECT * FROM history_text_backup;
  UNLOCK TABLES;
  DROP TABLE history_text_backup;
- 
-'###########################################################'
-
 CREATE TABLE history_uint_sync_backup AS
       SELECT * FROM history_uint_sync WHERE clock > 1388534400;
  TRUNCATE history_uint_sync;

@@ -1,4 +1,3 @@
-'###################juz######################'
 delimiter //
 
 CREATE PROCEDURE history()
@@ -14,11 +13,6 @@ CREATE PROCEDURE history()
  END
 //
 delimiter ;
-
-
-
-
-'#########################juz###########################'
 
 delimiter //
 
@@ -36,8 +30,6 @@ CREATE PROCEDURE history_str()
 //
 delimiter ;
 
-'#####################juz ###############################'
-
 delimiter //
 
 CREATE PROCEDURE history_str_sync()
@@ -53,9 +45,6 @@ CREATE PROCEDURE history_str_sync()
  END
 //
 delimiter ;
-
-
-'#####################juz####################################'
 
 delimiter //
 
@@ -73,9 +62,6 @@ CREATE PROCEDURE history_sync()
 //
 delimiter ;
 
-
-'#########################################'
-
 delimiter //
 
 CREATE PROCEDURE history_uint()
@@ -92,9 +78,6 @@ CREATE PROCEDURE history_uint()
 //
 delimiter ;
 
-
-'######################juz ##############################'
-
 delimiter //
 
 CREATE PROCEDURE history_text()
@@ -110,8 +93,6 @@ CREATE PROCEDURE history_text()
  END
 //
 delimiter ;
-
-'###################juz#################################'
 
 delimiter //
 
