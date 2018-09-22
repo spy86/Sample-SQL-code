@@ -6,11 +6,7 @@ jobs:
     steps:
       - run:
           name: Download SonarQube
-          command: curl --insecure -OL https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.6.1.zip -o /tmp/sonar-scanner-2.6.1.zip
-    steps:
-      - run:
-          name: Extract SonarQube
-          command: unzip /tmp/sonar-scanner-2.6.1.zip
+          command: curl --insecure -OL https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.6.1.zip && unzip sonar-scanner-2.6.1.zip
 workflows:
   version: 2
   test:
