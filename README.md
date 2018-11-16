@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/bb/devops_sysops/sql/tree/master.svg?style=svg)](https://circleci.com/bb/devops_sysops/sql/tree/master)
+[![Build Status](https://dev.azure.com/DevOpsSysOps/SonarQube/_apis/build/status/SonarQube-CI-SQL)](https://dev.azure.com/DevOpsSysOps/SonarQube/_build/latest?definitionId=2)
 
 [![SonarQube](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg) 
 
